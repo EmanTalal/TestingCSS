@@ -1,0 +1,98 @@
+                            * {
+                                margin: 0;
+                            }
+                            
+                            .Continer {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                                grid-area: "logo logo logo logo", "Home Home Home Home", "About us About as About au About us", "box1 box1 box1 box1 ", "box2 box2 box2 box2", " box3 box3 box3 box3 ", "box4 box4 box4 box4", "footer footer footer footer";
+                            }
+                            
+                            .Logo {
+                                /* border: 1px solid black; */
+                                grid-row-start: 1;
+                                grid-column-start: 1;
+                                grid-row-end: 2;
+                                grid-column-end: 2;
+                            }
+                            
+                            .Home {
+                                border: 1px solid black;
+                                grid-row-start: 2;
+                                grid-column-start: 2;
+                                grid-row-end: 3;
+                                grid-column-end: 4;
+                            }
+                            
+                            .About us {
+                                border: 1px solid black;
+                                grid-row-start: 3;
+                                grid-column-start: 4;
+                                grid-row-end: 4;
+                                grid-column-end: 5;
+                            }
+                            
+                            nav {
+                                background-color: rgb(60, 57, 57);
+                            }
+                            
+                            ul li {
+                                list-style: none;
+                            }
+                            
+                            .snapa {
+                                border: 1px solid blueviolet;
+                                padding-left: 15%;
+                                margin-top: 4%;
+                            }
+                            
+                            .box1 {
+                                background-color: pink;
+                                grid: box1;
+                                grid-row-start: 4;
+                                grid-column-start: 5;
+                                grid-row-end: 5;
+                                grid-column-end: 6;
+                                padding-left: 30%;
+                            }
+                            
+                            .box2 {
+                                background-color: rgb(0, 0, 0);
+                                grid: box2;
+                                grid-row-start: 5;
+                                grid-column-start: 6;
+                                grid-row-end: 6;
+                                grid-column-end: 8;
+                                padding-left: 50%;
+                            }
+                            
+                            .box3 {
+                                background-color: rgb(26, 0, 175);
+                                grid: box3;
+                                grid-row-start: 6;
+                                grid-column-start: 7;
+                                grid-row-end: 8;
+                                grid-column-end: 8;
+                            }
+                            
+                            .box4 {
+                                background-color: rgb(6, 6, 7);
+                                grid: box4;
+                                grid-row-start: 8;
+                                grid-column-start: 8;
+                                grid-row-end: 9;
+                                grid-column-end: 9;
+                            }
+                            
+                            .footer {
+                                background-color: aqua;
+                            }
+                            
+                            @media only screen and (max-width: 600px) {
+                                .Continer {
+                                    grid-column: 1fr;
+                                }
+                                .nav {
+                                    display: inline-block;
+                                }
+                            }
